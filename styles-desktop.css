@@ -1,0 +1,44 @@
+/* 769px - 1279px */
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0 60px; }
+
+h1 {
+    font-size: 3em; }
+    
+h2 {
+    font-size: 2.25em; }
+    
+html, body, div, span, p, a {
+    font-size: 1.05em;
+    line-height: 1.25em; }
+    
+div.section p, div#sec-program ol {
+     padding: 0 60px;
+     margin-bottom: 20px; }
+
+div.section {
+    padding: 40px 0 20px 0; }
+
+header {
+    display: flex;
+    flex-flow: row nowrap;}
+
+div#logo > span {
+    float: left;
+    padding: 0px 0px 0px 20px; }
+
+div#nav > span {
+    float: right;
+    padding: 0px 20px 0px 0px; }
+    
+div#sec-main {
+    padding: 100px 0 ;
+    background-image: url("bg-80-700x1300px.jpg"); }
+
+div#muste-inst > p#thanks,
+div#muste-inst p#thanks a:link,
+div#muste-inst p#thanks a:visited {
+    font-size: 28px; }
+
+

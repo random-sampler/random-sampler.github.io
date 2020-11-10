@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One|Source+Sans+Pro');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cardo', serif;
+    line-height: 1.1em;
+    padding: 0 20px; }
+h1 { 
+    font-size: 2em;
+    line-height: 1.25em; }
+
+h2 { 
+    font-size: 1.625em;
+    line-height: 1.15em; }
+
+html, body, div, span, p, a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    line-height: 1.25em; }
+
+a:link, a:visited {
+    text-decoration: none;}
+    
+a:active, a:hover {
+    text-decoration: underline; }
+
+div {
+    width: 100%;
+    margin: 0 auto; }
+    
+div.section {
+    text-align: center;
+    padding: 30px 0 20px 0;
+    /*border-top: 1px solid black;*/ }
+
+div.section h2 {
+    margin-bottom: 20px; }
+
+div.section p, div#sec-program ol {
+     padding: 0 20px;
+     margin-bottom: 10px; }
+
+/* Header - Logo and Nav */
+header {
+    color: white;
+    background-color: rgb(0,0,0);
+    top: 0;
+    width: 100%; }
+
+header {
+    display: flex;
+    flex-flow: column nowrap;}
+
+header > div {
+    flex: 1 1;
+    padding: 10px; }
+
+div#logo > h1 { font-family: 'Source Sans Pro', sans-serif; }
+div#logo, div#nav { 
+    text-align: center; }
+div#logo {
+    padding: 10px 0 0 0;}
+div#nav {
+    padding: 10px 0;}
+div#nav > span {
+    padding: 0px 10px 0px 0px; }
+
+#nav span a:link, #nav span a:visited {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif; }
+
+
+/* Main Section */
+div#sec-main {
+    background-color: black;
+    color: white;
+    background-image: url("bg-80-400x800px.jpg"); }
+
+div#sec-main > p {
+    padding-top: 30px;
+    font-size: 20px; }
+    
+/* For flexiboxes, 3 boxes inline
+
+div#sec-act {
+    display: flex;
+    flex-flow: row nowrap;}
+
+div#sec-act > div {
+    flex: 1 1;
+    padding: 0px 30px;}
+*/
+
+/* Why AOM 2.0S? Section */
+
+div#sec-why, div#sec-program {
+    background-color: #f5f5f5;
+    text-align: left; }
+        
+/*div#sec-why > p, div#sec-program > p, div#sec-sponsor > p, div#sec-join > p {
+    padding: 0 20px;}*/
+    
+div#sec-join { padding-bottom: 40px; }
+div#sec-sponsor > p, div#sec-join > ul {
+    padding-bottom: 30px; }
+
+div#sec-join > span a:link, div#sec-join > span a:visited,
+div#sec-sponsor > span a:link, div#sec-sponsor > span a:visited {
+    border: 1px solid;
+    border-color: #005b9f;
+    color: #005b9f;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px; }
+    
+div#sec-join > span a:hover, div#sec-join > span a:active,
+div#sec-sponsor > span a:hover, div#sec-sponsor > span a:active {
+    background-color: #005b9f;
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    color: white; }
+    
+div#muste-inst > p#thanks, div#muste-inst p#thanks a:link, div#muste-inst p#thanks a:visited {
+    font-size: 20px; }
+
+div#muste-inst p#thanks a:link, div#muste-inst p#thanks a:visited {
+    color: #005b9f; }
+
+/* div#sec-sponsor {
+    background-color: #e6ffff; }
+
+div#sec-sponsor > p#sponsor {
+    font-size: 20px;
+    color: #005b9f;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+*/
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 30px 0;
+    }
+#foot-1 { padding-bottom: 20px; }
+div.footer span, div.footer span a:link, 
+div.footer span a:visited, div.footer p {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif; }
+

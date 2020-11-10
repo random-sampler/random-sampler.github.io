@@ -1,0 +1,13 @@
+/* 480px - 768px */
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0 40px; }
+    
+html, body, div, span, p, a {
+    font-size: 1.05em;
+    line-height: 1.25em; }
+    
+div.section p, div#sec-program ol {
+     padding: 0 40px;
+     margin-bottom: 20px; }
+

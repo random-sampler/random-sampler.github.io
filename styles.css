@@ -1,45 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One|Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	}
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cardo', serif;
-    line-height: 1.1em;
-    padding: 0 20px; }
-h1 { 
-    font-size: 2em;
-    line-height: 1.25em; }
+	font-family: 'Overpass', sans-serif;
+    line-height: 1.1em; }
 
-h2 { 
-    font-size: 1.625em;
-    line-height: 1.15em; }
-
-html, body, div, span, p, a {
+html, body, span, p, a {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1em;
+    font-size: 1.05em;
     line-height: 1.25em; }
 
-a:link, a:visited {
-    text-decoration: none;}
-    
-a:active, a:hover {
-    text-decoration: underline; }
+h1 { font-size: 4em;}
 
-div {
-    width: 100%;
-    margin: 0 auto; }
-    
-div.section {
-    text-align: center;
-    padding: 30px 0 20px 0;
-    /*border-top: 1px solid black;*/ }
+h2 { font-size: 2em; }
 
-div.section h2 {
-    margin-bottom: 20px; }
-
-div.section p, div#sec-program ol {
-     padding: 0 20px;
-     margin-bottom: 10px; }
+p {
+	margin-bottom: 20px; }
 
 /* Header - Logo and Nav */
+
 header {
     color: white;
     background-color: rgb(0,0,0);
@@ -48,103 +48,73 @@ header {
 
 header {
     display: flex;
-    flex-flow: column nowrap;}
+    flex-flow: row nowrap;}
 
 header > div {
     flex: 1 1;
     padding: 10px; }
 
 div#logo > h1 { font-family: 'Source Sans Pro', sans-serif; }
+
 div#logo, div#nav { 
     text-align: center; }
-div#logo {
-    padding: 10px 0 0 0;}
-div#nav {
-    padding: 10px 0;}
+
+div#logo > span {
+    float: left;
+    padding: 0px 0px 0px 20px; }
+
 div#nav > span {
-    padding: 0px 10px 0px 0px; }
+    float: right;
+    padding: 0px 20px 0px 0px; }
 
 #nav span a:link, #nav span a:visited {
     color: white;
     font-family: 'Source Sans Pro', sans-serif; }
 
+/* Sections */
 
-/* Main Section */
-div#sec-main {
-    background-color: black;
-    color: white;
-    background-image: url("bg-80-400x800px.jpg"); }
+div.fullscreen {
+	height: 100vh; }
 
-div#sec-main > p {
-    padding-top: 30px;
-    font-size: 20px; }
-    
-/* For flexiboxes, 3 boxes inline
+div#main, div#initiative, div#publications {
+	background-color: #f5f5f5; }
 
-div#sec-act {
-    display: flex;
-    flex-flow: row nowrap;}
+div#current, div#survey {
+	background-color: blue; }
 
-div#sec-act > div {
-    flex: 1 1;
-    padding: 0px 30px;}
-*/
+/* div#issues { height: 200vh; } */
 
-/* Why AOM 2.0S? Section */
+div.content { 	
+	padding: 30px 30px 0 30px; }
 
-div#sec-why, div#sec-program {
-    background-color: #f5f5f5;
-    text-align: left; }
-        
-/*div#sec-why > p, div#sec-program > p, div#sec-sponsor > p, div#sec-join > p {
-    padding: 0 20px;}*/
-    
-div#sec-join { padding-bottom: 40px; }
-div#sec-sponsor > p, div#sec-join > ul {
-    padding-bottom: 30px; }
+/* Section - Main */
 
-div#sec-join > span a:link, div#sec-join > span a:visited,
-div#sec-sponsor > span a:link, div#sec-sponsor > span a:visited {
-    border: 1px solid;
-    border-color: #005b9f;
-    color: #005b9f;
-    margin: 0;
-    padding: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 30px; }
-    
-div#sec-join > span a:hover, div#sec-join > span a:active,
-div#sec-sponsor > span a:hover, div#sec-sponsor > span a:active {
-    background-color: #005b9f;
-    text-decoration: none;
-    margin: 0;
-    padding: 10px;
-    color: white; }
-    
-div#muste-inst > p#thanks, div#muste-inst p#thanks a:link, div#muste-inst p#thanks a:visited {
-    font-size: 20px; }
+div#main {
+	display: flex;
+    flex-flow: column nowrap;
+}
 
-div#muste-inst p#thanks a:link, div#muste-inst p#thanks a:visited {
-    color: #005b9f; }
+/* Section - Issues */
 
-/* div#sec-sponsor {
-    background-color: #e6ffff; }
+div#issues div.card-container {
+	display:flex;
+	flex-flow: row nowrap;
+}
 
-div#sec-sponsor > p#sponsor {
-    font-size: 20px;
-    color: #005b9f;
-    font-family: 'Source Sans Pro', sans-serif;
-    }
-*/
+div.card {
+	flex-basis: 0;
+	flex-grow: 1;}
 
-footer {
-    background-color: black;
-    text-align: center;
-    padding: 30px 0;
-    }
-#foot-1 { padding-bottom: 20px; }
-div.footer span, div.footer span a:link, 
-div.footer span a:visited, div.footer p {
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif; }
+@media only screen
 
+  and (min-device-width: 300px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+h1 {
+	font-size: 10em; }
+
+span, p, a {
+    font-size: 3em;
+    line-height: 1.25em; }
+}

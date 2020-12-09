@@ -40,6 +40,10 @@ h3, h4, h5, h6 { font-size: 3em; }
 
 p, span { font-size: 2.2em; }
 
+p { padding-bottom: 1em; }
+
+img { width: 100%; height: auto; }
+
 /* Header - Logo and Nav */
 
 header {
@@ -50,20 +54,27 @@ header {
 
 header {
     display: flex;
-    flex-flow: row nowrap;}
+    flex-flow: row nowrap;
+	height: 100%;}
 
 header > div {
     flex: 1 1;
     padding: 1em; }
 
-div#logo > h1 { font-family: 'Source Sans Pro', sans-serif; }
+/*div#logo > h1 { font-family: 'Source Sans Pro', sans-serif; }*/
 
 div#logo, div#nav { 
     text-align: center; }
-
+/*
 div#logo > span {
     float: left;
     padding-left: 0.5em; }
+*/
+
+div#logo img {
+	float: left;
+	width: 200px;
+	height: auto; }
 
 div#nav > span {
     float: right;
@@ -91,6 +102,9 @@ div#current, div#survey {
 div.content { 	
 	padding: 0em 1em; }
 
+img.content {
+	padding-bottom: 2em;}
+
 /* Section - Main */
 
 div#main {
@@ -105,10 +119,8 @@ div.card-container {
 	flex-flow: column nowrap;
 }
 
-div.issues div.card {
+div.card {
 	padding-bottom: 3em;
-	flex-basis: 0;
-	flex-grow: 1;
 	}
 
 /*@media only screen
@@ -152,6 +164,10 @@ div#issues div.card-container {
 		
 	div#issues div.card-container {
 		padding-bottom: 2em;
+	}
+
+	div.card {
+		padding-bottom: 1em;
 	}
 
 	div.issues div.card {

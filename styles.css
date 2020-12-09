@@ -99,12 +99,8 @@ div#main {
 
 div#issues div.card-container {
 	display:flex;
-	flex-flow: row nowrap;
+	flex-flow: column nowrap;
 }
-
-div.card {
-	flex-basis: 0;
-	flex-grow: 1;}
 
 /*@media only screen
 
@@ -119,6 +115,17 @@ div#issues div.card-container {
 
 }*/
 
-@media (min-width: 48em) { }
 
-@media (min-width: 78em) { }
+/* TABLET and UP*/
+
+@media (min-width: 78em) { 
+	div#issues div.card-container {
+		display:flex;
+		flex-flow: row nowrap;
+	}
+
+	div.card {
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+}

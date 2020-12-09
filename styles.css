@@ -35,8 +35,7 @@ h1 { font-size: 4em;}
 
 h2 { font-size: 2em; }
 
-p {
-	margin-bottom: 20px; }
+p { }
 
 /* Header - Logo and Nav */
 
@@ -76,16 +75,18 @@ div#nav > span {
 div.fullscreen {
 	height: 100vh; }
 
+div.section { 
+	border: 0px;
+	padding: 50px 0 0 0; }
+
 div#main, div#initiative, div#publications {
 	background-color: #f5f5f5; }
 
 div#current, div#survey {
 	background-color: blue; }
 
-/* div#issues { height: 200vh; } */
-
 div.content { 	
-	padding: 30px 30px 0 30px; }
+	padding: 0px 30px 30px 30px; }
 
 /* Section - Main */
 
@@ -105,16 +106,19 @@ div.card {
 	flex-basis: 0;
 	flex-grow: 1;}
 
-@media only screen
+/*@media only screen
 
   and (min-device-width: 300px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-h1 {
-	font-size: 10em; }
-
-span, p, a {
-    font-size: 3em;
-    line-height: 1.25em; }
+div#issues div.card-container {
+	display:flex;
+	flex-flow: column nowrap;
 }
+
+}*/
+
+@media (min-width: 48em) { }
+
+@media (min-width: 78em) { }

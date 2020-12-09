@@ -97,9 +97,6 @@ div.section {
 div#main, div#initiative, div#publications {
 	background-color: #f5f5f5; }
 
-div#current, div#survey {
-	background-color: #4ea9b6; }
-
 div.content { 	
 	padding: 0em 1em; }
 
@@ -113,7 +110,30 @@ div#main {
     flex-flow: column nowrap;
 }
 
+
+/* Current */
+
+div#current {
+	background-color: black;
+	color: #fad14f;
+	text-align: center; }
+
+div#current h3 {}
+
+div#current a:link, div#current a:visited {
+	color: white;
+	border: 1px solid white;
+	font-size: 1.5em;
+	padding: 0.5em;
+	text-decoration: none; }
+
+div#current a:hover {
+	background-color: white;
+	color: black; }
+
 /* Section - Issues */
+
+div#issues div.title { text-align: center;}
 
 div.card-container {
 	display: flex;
@@ -121,8 +141,24 @@ div.card-container {
 }
 
 div.card {
-	padding-bottom: 3em;
+	margin-bottom: 2em;
+	padding: 0em;
 	}
+
+div.card img {
+	padding-bottom: 80px; }
+
+div.card h3, div.card p {
+	padding-left: 80px;
+	padding-right: 80px; }
+
+div.card p {padding-bottom: 80px;}
+
+div#card-0 { background-color: #f68d91; }
+div#card-1 { background-color: #4ea9b6; }
+div#card-2 { background-color: #4f9047; }
+div#card-3 { background-color: #f47732; }
+
 
 /*@media only screen
 
@@ -164,6 +200,10 @@ div#issues div.card-container {
 	div.section { 
 	border: 0px;
 	padding: 2em 1em; }
+
+	div#current a:link, div#current a:visited {
+		font-size: 1em;
+		}
 
 	div.card-container {
 		display: flex;

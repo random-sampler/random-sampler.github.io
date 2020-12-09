@@ -78,7 +78,8 @@ div#logo img {
 
 div#nav > span {
     float: right;
-    padding-right: 0.5em; }
+    padding-right: 0.5em;
+	padding-top: 1em; }
 
 #nav span a:link, #nav span a:visited {
     color: black;
@@ -152,6 +153,13 @@ div#issues div.card-container {
 	h4, h5, h6 { font-size: 1em; }
 
 	p, span { font-size: 1em; }
+
+	div#logo img {
+		width: 180px; }
+	
+	#nav span a:link, #nav span a:visited {
+		font-size: 1.3em;
+		padding-left: 1em; }
 
 	div.section { 
 	border: 0px;

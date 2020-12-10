@@ -245,6 +245,13 @@ div#issues div.card-container {
 	div.issues div.card p {padding-bottom: 30px;}
 
 	img.publications { width: 300px; }
+	
+	.pub-front .card-container { 
+		display: flex;
+		flex-flow: row nowrap; }
+	div.card {
+		flex-basis: 30%;
+		flex-grow: 0; }
 
 	div#foot1 {
 		flex-basis: 0;

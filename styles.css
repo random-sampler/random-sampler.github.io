@@ -38,6 +38,10 @@ h2 { font-size: 4em; }
 
 h3, h4, h5, h6 { font-size: 3em; }
 
+a:link, a:visited { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
 p, span { font-size: 2.2em; }
 
 p { padding-bottom: 1em; }
@@ -113,21 +117,21 @@ div#main {
 
 /* Current */
 
-div#current {
+div.action {
 	background-color: black;
 	color: #fad14f;
 	text-align: center; }
 
-div#current h3 {}
+div.action h3 {}
 
-div#current a:link, div#current a:visited {
+div.action a:link, div.action a:visited {
 	color: white;
 	border: 1px solid white;
 	font-size: 1.5em;
 	padding: 0.5em;
 	text-decoration: none; }
 
-div#current a:hover {
+div.action a:hover {
 	background-color: white;
 	color: black; }
 
@@ -145,19 +149,26 @@ div.card {
 	padding: 0em;
 	}
 
-div.card img {
+div.issues div.card img {
 	padding-bottom: 80px; }
 
-div.card h3, div.card p {
+div.issues div.card h3, div.issues div.card p {
 	padding-left: 80px;
 	padding-right: 80px; }
 
-div.card p {padding-bottom: 80px;}
+div.issues div.card p {padding-bottom: 80px;}
 
 div#card-0 { background-color: #f68d91; }
 div#card-1 { background-color: #4ea9b6; }
 div#card-2 { background-color: #4f9047; }
 div#card-3 { background-color: #f47732; }
+
+div#footer {
+	background-color: black;
+	color: white; }
+
+div#footer a:link, div#footer a:visited { 
+	color: #fad14f; }
 
 
 /*@media only screen
@@ -178,13 +189,13 @@ div#issues div.card-container {
 
 @media (min-width: 78em) {
 
-	h1, h2, h3, h4, h5, h6 { padding-bottom: 0.5em; }	
+	h1, h2, h3, h4, h5, h6 { padding-bottom: 1em; }	
 
 	h1 {  font-size: 5em; }
 
 	h2 { font-size: 3em; }
 
-	h3 { font-size: 2em; }
+	h3 { font-size: 1.8em; }
 
 	h4, h5, h6 { font-size: 1em; }
 
@@ -211,24 +222,41 @@ div#issues div.card-container {
 	}
 		
 	div#issues div.card-container {
-		padding-bottom: 2em;
+		padding-bottom: 0em;
+		justify-content: space-between;
 	}
 
 	div.card {
 		padding-bottom: 1em;
+		margin-bottom: 0em;
 	}
 
 	div.issues div.card {
-		flex-basis: 25%;
-		flex-grow: 0;
+		margin-left: 10px;
+		margin-right: 10px;
+		flex-basis: 0%;
+		flex-grow: 1;
 	}
+
+	div.issues div.card img {
+		padding-bottom: 30px;
+		width: ; }
+
+	div.issues div.card h3, div.issues div.card p {
+		padding-left: 30px;
+		padding-right: 30px; }
+
+	div.issues div.card p {padding-bottom: 30px;}
+
+	img.publications { width: 300px; }
 
 	div#foot1 {
 		flex-basis: 0;
-		flex-grow: 3;
+		flex-grow: 2;
 	}
 	
 	div#foot2, div#foot3 {
 		flex-basis: 0;
-		flex-grow: 1; }
+		flex-grow: 1;
+		margin-left: 2em;  }
 }

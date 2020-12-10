@@ -69,11 +69,6 @@ header > div {
 
 div#logo, div#nav { 
     text-align: center; }
-/*
-div#logo > span {
-    float: left;
-    padding-left: 0.5em; }
-*/
 
 div#logo img {
 	float: left;
@@ -119,21 +114,26 @@ div#main {
 
 div.action {
 	background-color: black;
-	color: #fad14f;
+	color: white;
 	text-align: center; }
 
-div.action h3 {}
+.action span {
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.5em;
+	line-height:1em; }
 
 div.action a:link, div.action a:visited {
-	color: white;
-	border: 1px solid white;
-	font-size: 1.5em;
+	font-family: 'Overpass', sans-serif;
+	font-size: 1.2em;
+	background-color: #fad14f;	
+	color: black;
 	padding: 0.5em;
 	text-decoration: none; }
 
 div.action a:hover {
-	background-color: white;
-	color: black; }
+	background-color: black;
+	border: 2px solid #fad14f;
+	color: white; }
 
 /* Section - Issues */
 
@@ -211,10 +211,6 @@ div#issues div.card-container {
 	div.section { 
 	border: 0px;
 	padding: 2em 1em; }
-
-	div#current a:link, div#current a:visited {
-		font-size: 1em;
-		}
 
 	div.card-container {
 		display: flex;

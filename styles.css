@@ -109,6 +109,8 @@ div#main {
     flex-flow: column nowrap;
 }
 
+#main p { font-size: 1.2em; }
+
 
 /* Current */
 

@@ -176,6 +176,11 @@ div#footer {
 div#footer a:link, div#footer a:visited {
 	color: #fad14f; }
 
+div#organizer-logos {
+	display: flex;	}
+
+div.organizer-logo {
+	padding-right: 2em;	}
 
 /*@media only screen
 

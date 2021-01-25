@@ -86,7 +86,8 @@ div#nav > span {
 
 .nav-links {
 	display: flex;
-	float: right;	}
+	float: right;
+	padding-right: 1em;	}
 
 .burger {
 	display: none;

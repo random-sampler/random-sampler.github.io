@@ -301,7 +301,7 @@ div#issues div.card-container {
 		margin-left: 2em;  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 78em) {
 	/* .nav-links {
 		width: 60%;
 	} */

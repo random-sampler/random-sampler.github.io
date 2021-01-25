@@ -51,14 +51,14 @@ img { width: 100%; height: auto; }
 /* Header - Logo and Nav */
 
 header {
-    color: black;
-    background-color: #f5f5f5;
-    top: 0;
-    width: 100%; }
+  color: black;
+  background-color: #f5f5f5;
+  top: 0;
+  width: 100%; }
 
 header {
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 	height: 100%;}
 
 header > div {
@@ -83,6 +83,34 @@ div#nav > span {
 #nav span a:link, #nav span a:visited {
     color: black;
     font-family: 'Source Sans Pro', sans-serif; }
+
+.nav-links {
+	display: flex;
+	float: right;	}
+
+.burger {
+	display: none;
+	padding: 0.5rem;
+	cursor: pointer;	}
+
+.line {
+	height: 2px;
+	width: 35px;
+	margin: 0.5rem 0;
+	background: #000;
+	transition: transform 0.75s ease, opacity 0.75s ease;	}
+
+#nav.show .line1 {
+	transform: translate(-10px) rotate(45deg) translate(15px);	}
+
+#nav.show .line2 {
+	opacity: 0;	}
+
+#nav.show .line3 {
+	transform: translate(-10px) rotate(-45deg) translate(15px);	}
+
+#nav.show .nav-links {
+	transform: translateX(0%);	}
 
 /* Sections */
 
@@ -126,7 +154,7 @@ div.action {
 .action span {
 	font-family: 'Overpass', sans-serif;
 	font-size: 1.5em;
-	line-height:1em; }
+	line-height:1.5em; }
 
 div.action a:link, div.action a:visited {
 	font-family: 'Overpass', sans-serif;
@@ -147,13 +175,11 @@ div#issues div.title { text-align: center;}
 
 div.card-container {
 	display: flex;
-	flex-flow: column nowrap;
-}
+	flex-flow: column nowrap;	}
 
 div.card {
 	margin-bottom: 2em;
-	padding: 0em;
-	}
+	padding: 0em;	}
 
 div.issues div.card img {
 	padding-bottom: 80px; }
@@ -273,4 +299,30 @@ div#issues div.card-container {
 		flex-basis: 0;
 		flex-grow: 1;
 		margin-left: 2em;  }
+}
+
+@media screen and (max-width: 800px) {
+	/* .nav-links {
+		width: 60%;
+	} */
+	.burger {
+		display: block;
+		position: fixed;
+		right: 24px;
+	}
+	.nav-links {
+		position: fixed;
+		color: #f5f5f5;
+		padding: 12vh 4em 0 0;
+		top: 0px;
+		right: 0;
+		height: 100vh;
+		width: 20em;
+		flex-direction: column;
+		align-items: flex-end;
+		background: #fad14f;
+		transform: translateX(100%);
+		transition: transform 1s ease;
+		box-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+	}
 }

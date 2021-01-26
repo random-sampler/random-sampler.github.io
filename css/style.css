@@ -330,5 +330,6 @@ div#issues div.card-container {
 		box-shadow: 0px 1px 5px rgba(0,0,0,0.5);	}
 
 	.socmed-icon {
+		margin-left: 0.3em;
 		font-size: 1em;	}
 }

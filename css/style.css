@@ -170,6 +170,13 @@ div.action a:hover {
 	border: 2px solid #fad14f;
 	color: white; }
 
+/* YT embed */
+.yt-container {
+	text-align: center; }
+
+.yt-container iframe {
+	margin: auto; }
+
 /* Section - Issues */
 
 div#issues div.title { text-align: center;}
